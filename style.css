@@ -5,88 +5,54 @@
     box-sizing: border-box;
 }
 
-/* Typography - Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
+    color: #333;
 }
 
-/* Container */
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 20px;
+/* Full-Page Sections */
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
 }
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #6D5ACF 0%, #9695F7 100%);
-    color: #fff;
-    padding: 20px 0;
+    background: #333;
+    color: white;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-header h1 {
-    text-align: center;
-    font-weight: 700;
-}
-
 /* Navigation Bar */
-nav {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-}
-
 nav a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    padding: 7px 15px;
-    margin: 0 10px;
-    border-radius: 4px;
-    transition: background-color 0.3s, transform 0.3s;
+    padding: 10px 15px;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    background-color: #5754A0;
-    transform: translateY(-3px);
-}
-
-/* Section Styling */
-section {
-    padding: 40px 0;
-    overflow: hidden;
-}
-
-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 28px;
-    color: #333;
-    font-weight: 700;
+    color: #4CAF50;
 }
 
 /* Footer */
 footer {
     background: #333;
-    color: #fff;
+    color: white;
     text-align: center;
     padding: 20px 0;
-    font-size: 14px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
-
-    nav a {
-        margin-bottom: 5px;
-    }
+    /* Adjust styles for mobile responsiveness */
 }
